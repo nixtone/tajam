@@ -1,0 +1,94 @@
+/* Шрифты */
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto-Black.woff2') format('woff2'),
+        url('fonts/Roboto-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto-Light.woff2') format('woff2'),
+        url('fonts/Roboto-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('fonts/PlayfairDisplay-Black.woff2') format('woff2'),
+        url('fonts/PlayfairDisplay-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('fonts/PlayfairDisplay-Bold.woff2') format('woff2'),
+        url('fonts/PlayfairDisplay-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('fonts/PlayfairDisplay-Regular.woff2') format('woff2'),
+        url('fonts/PlayfairDisplay-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Первичное */
+
+html, body {
+	height: 100%;
+}
+body {
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+}
+#wrapper {
+	flex: 1 0 auto;
+}
+footer {
+	flex: 0 0 auto;
+}
+.container {
+	box-sizing: border-box;
+	margin:0 auto;
+	max-width: 960px;
+	min-width: 320px;
+}
+
+/* Атомарные классы */
+
+.bimg, .bimg img {
+	display: block;
+	width: 100%;
+}
+
+/* Основное */
+
+
+
+/* Адаптив */
+
+@media all and (min-width: calc(960px + 31px)) {
+	.nob {
+		display: none;
+	}
+	
+}
+@media all and (max-width: calc(960px + 30px)) {
+	.container:not(.cpn) {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.nom {
+		display: none;
+	}
+
+}
