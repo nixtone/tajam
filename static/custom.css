@@ -130,12 +130,18 @@ p {
 	margin: 0 auto;
 	margin-top: 20px;
 }
+.gradient .title_area .descr::after {
+	background: #655c80;
+}
 .title_area h2 {
 	margin-bottom: 5px;
 }
 .title_area .descr {
 	font-family: 'Playfair Display';
 	color: #8e8d90;
+}
+.gradient .title_area .descr {
+	color: #fff;
 }
 
 /* Основное */
@@ -269,13 +275,13 @@ header #promoSlider.row.c2 .slick-dots li button::before {
 
 #expertise .wrap {
 	display: grid;
-	grid-template-columns: repeat(3, 3fr);
+	grid-template-columns: repeat(3, 3fr);	
+	text-align: center;
 }
 #expertise .item {
 	padding-left: 30px;
 	padding-right: 30px;
 	padding-bottom: 20px;
-	text-align: center;
 	border-width: 0 1px 1px 0;
 	border-style: solid;
 	border-color: #ebebeb;
@@ -307,6 +313,36 @@ header #promoSlider.row.c2 .slick-dots li button::before {
 
 #team {
 	background: url(images/back/3.jpg) no-repeat center top;
+	color: #fff;
+	text-align: center;
+}
+#team .wrap {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 20px;
+}
+#team .item {
+	border: 1px solid #7c7891;
+	max-width: 220px;
+}
+#team .preview {
+	border-bottom: 1px solid #7c7891;
+}
+#team .name {
+	font-size: 0.9em;
+	font-weight: bold;
+	margin: 20px 0 5px;
+}
+#team .status {
+	font-size: 0.8em;
+	margin: 5px 0 20px;
+	color: #c3c1c9;
+}
+#team .after_descr {
+	margin-top: 65px;
+}
+#team .descr {
+	margin-bottom: 25px;
 }
 
 #people {
