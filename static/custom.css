@@ -49,6 +49,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	margin: 0;
+	font-family: Roboto, Helvetica, Arial;
 }
 #wrapper {
 	flex: 1 0 auto;
@@ -58,9 +59,11 @@ footer {
 }
 .container {
 	box-sizing: border-box;
-	margin:0 auto;
+	margin: 0 auto;
 	max-width: 960px;
 	min-width: 320px;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
 /* Атомарные классы */
@@ -69,10 +72,144 @@ footer {
 	display: block;
 	width: 100%;
 }
+.gradient {
+	background: linear-gradient( to bottom right , rgb(4%, 2%, 18%, 0.8) 0%,rgb(19%, 11%, 37%, 0.8) 100%);
+	height: inherit;
+	color: #fff;
+}
+.btn {
+	color: #00e0d0;
+	font-weight: bold;
+	font-size: 0.9em;
+	text-decoration: none;
+	border: 1px solid #00e0d0;
+	border-radius: 2px;
+	padding: 10px 15px;
+	display: inline-block;
+	background: transparent;
+	cursor: pointer;
+	transition: 0.3s;
+}
+.btn:hover {
+	background: #00e0d0;
+	color: #fff;
+}
+h2, h3 {
+	font-family: 'Playfair Display';
+}
+p {
+	line-height: 25px;
+	font-size: 0.9em;
+	color: #ebeaed;
+	letter-spacing: 0.02em;
+}
 
 /* Основное */
 
+header {
+	background: url(images/back/1.jpg) no-repeat center top;
+	height: 670px;
+}
+header .container {
+	display: flex;
+	flex-direction: column;
+	height: inherit;
+}
+header .row.c1 {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+header .row.c1 nav ul {
+	padding: 0;
+	margin: 0;
+}
+header .row.c1 nav li {
+	list-style: none;
+}
+header .row.c1 nav > ul {
+	display: flex;
+}
+header .row.c1 nav a {
+	display: block;
+	color: #fff;
+	text-decoration: none;
+	font-family: Roboto;
+	font-weight: bold;
+	margin: 5px 14px;
+	font-size: 0.8em;
+}
+header .row.c1 nav a:hover {
+	color: #00e0d0;
+	transition: 0.3s;
+}
+header .row.c1 nav li:last-child a {
+	margin-right: 0;
+}
+header .row.c2 {
+	flex: 1 1 auto;
+}
+header #promoSlider h2 {
+	font-size: 2em;
+}
+header #promoSlider h2:after {
+	content: '';
+	display: block;
+	width: 50px;
+	height: 1px;
+	background: #00e0d0;
+	margin: 20px auto 30px;
+}
+header #promoSlider .btn {
+	margin-top: 20px;
+}
+header #promoSlider.row.c2 {
+	height: 100%;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	margin-bottom: 85px;
+}
+header #promoSlider.row.c2 .item {
+	padding-left: 80px;
+	padding-right: 80px;
+}
+header #promoSlider.row.c2 .slick-dots li button::before {
+	content: '';
+	border-radius: 50%;
+	width: 8px;
+	height: 8px;
+	border: 1px solid #fff;
+}
+header #promoSlider.row.c2 .slick-dots li.slick-active button::before {
+	background-color: #00e0d0;
+	border-color: #00e0d0;
+}
+header #promoSlider.row.c2 .slick-dots li {
+	width: 5px;
+}
+header #promoSlider.row.c2 .slick-dots li button::before {
+	 opacity: 1; 
+}
 
+#video {
+	background: url(images/back/2.jpg) no-repeat center top;
+	height: 550px;
+}
+
+#team {
+	background: url(images/back/3.jpg) no-repeat center top;
+}
+
+#people {
+	background: url(images/back/4.jpg) no-repeat center top;
+}
+
+footer {
+	background: url(images/back/5.jpg) no-repeat center top;
+}
 
 /* Адаптив */
 
