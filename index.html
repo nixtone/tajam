@@ -214,8 +214,33 @@
 
 	<div id="contact" class="block">
 		<div class="container">
-			<h3>GIVE US A GOOD NEWS</h3>
-			<h3>OUR HAPPY CLIENT</h3>
+			<div class="col c1">
+				<h2>GIVE US A GOOD NEWS</h2>
+				<form id="feedback" method="post">
+					<input type="text" name="NAME" class="field" placeholder="Name">
+					<input type="text" name="EMAIL" class="field" placeholder="E-mail">
+					<input type="text" name="PHONE" class="field" placeholder="Phone">
+					<textarea name="MESSAGE" class="field" placeholder="Your message" rows="9"></textarea>
+					<input type="submit" value="SUBMIT" class="btn">
+					<input name="agree" id="agree" checked="" type="checkbox">
+					<label for="agree" style="color: #817f86; font-size: 0.9em;">I agree <a href="/agree/" style="color: #454545;">privacy policy</a></label>
+				</form>
+			</div>
+			<div class="col c2">
+				<h2>OUR HAPPY CLIENT</h2>
+				<div class="inner">
+					<img src="static/images/upload/happy_clients/zara.png" alt="" class="item c1">
+					<img src="static/images/upload/happy_clients/mango.png" alt="" class="item c2">
+					<img src="static/images/upload/happy_clients/barneys.png" alt="" class="item c3">
+					<img src="static/images/upload/happy_clients/gucci.png" alt="" class="item c4">
+					<img src="static/images/upload/happy_clients/cc.png" alt="" class="item c5">
+					<img src="static/images/upload/happy_clients/nike.png" alt="" class="item c6">
+					<img src="static/images/upload/happy_clients/converse.png" alt="" class="item c7">
+					<img src="static/images/upload/happy_clients/puma.png" alt="" class="item c8">
+					<img src="static/images/upload/happy_clients/levis.png" alt="" class="item c9">
+					<img src="static/images/upload/happy_clients/bb.png" alt="" class="item c10">
+				</div>
+			</div>
 		</div>
 	</div>
 
@@ -232,6 +257,7 @@
 <script src="static/jquery-3.6.0.min.js"></script>
 <script src="static/slick/slick.min.js"></script>
 <script src="static/fancy/jquery.fancybox.min.js"></script>
+<script src="static/jquery.maskedinput.min.js"></script>
 <script src="static/custom.js"></script>
 </body>
 </html>
