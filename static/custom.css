@@ -75,7 +75,6 @@ footer {
 .gradient {
 	background: linear-gradient( to bottom right , rgb(4%, 2%, 18%, 0.8) 0%,rgb(19%, 11%, 37%, 0.8) 100%);
 	height: inherit;
-	color: #fff;
 }
 .btn {
 	color: #00e0d0;
@@ -94,14 +93,29 @@ footer {
 	background: #00e0d0;
 	color: #fff;
 }
-h2, h3 {
+.block {
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+h1, h2, h3 {
+	color: #413d4b;
 	font-family: 'Playfair Display';
+	margin-top: 0;
+}
+h2 {
+	font-size: 1.4em;
+}
+.gradient h1, .gradient h2, .gradient h3 {
+	color: #fff;
 }
 p {
-	line-height: 25px;
+	color: #817f86;
 	font-size: 0.9em;
-	color: #ebeaed;
+	line-height: 23px;
 	letter-spacing: 0.02em;
+}
+.gradient p {
+	color: #ebeaed;
 }
 
 /* Основное */
@@ -151,10 +165,7 @@ header .row.c1 nav li:last-child a {
 header .row.c2 {
 	flex: 1 1 auto;
 }
-header #promoSlider h2 {
-	font-size: 2em;
-}
-header #promoSlider h2:after {
+header #promoSlider h1:after {
 	content: '';
 	display: block;
 	width: 50px;
@@ -192,6 +203,21 @@ header #promoSlider.row.c2 .slick-dots li {
 }
 header #promoSlider.row.c2 .slick-dots li button::before {
 	 opacity: 1; 
+}
+
+#about .container {
+	display: grid;
+	grid-template-columns: 5fr 7fr;
+	gap: 20px;
+}
+#about .col.c1 {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	padding-top: 10px;
+}
+#about .btn {
+	margin-top: 15px;
 }
 
 #video {
