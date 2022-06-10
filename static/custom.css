@@ -224,6 +224,28 @@ header #promoSlider.row.c2 .slick-dots li button::before {
 	background: url(images/back/2.jpg) no-repeat center top;
 	height: 550px;
 }
+#video .gradient {
+	display: flex;
+}
+#video .watch {
+	margin: auto;
+	color: #fff;
+	text-decoration: none;
+	font-weight: bold;
+	transition: 0.3s;
+	letter-spacing: 0.05em;
+}
+#video .watch::before {
+	content: '';
+	display: block;
+	background: url(images/sprite.png) no-repeat -150px 0;
+	width: 100px;
+	height: 100px;
+	margin: 0 auto 30px;
+}
+#video .watch:hover {
+	color: #00e0d0;
+}
 
 #team {
 	background: url(images/back/3.jpg) no-repeat center top;

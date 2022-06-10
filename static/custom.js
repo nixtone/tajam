@@ -10,6 +10,7 @@ $(document).ready(function() {
 		dots: true
 	});
 
-
+	// Видео о компании
+	$("#video .watch").fancybox();
 
 });
