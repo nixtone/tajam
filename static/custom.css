@@ -95,7 +95,7 @@ footer {
 }
 .block {
 	padding-top: 60px;
-	padding-bottom: 60px;
+	padding-bottom: 70px;
 }
 h1, h2, h3 {
 	color: #413d4b;
@@ -116,6 +116,26 @@ p {
 }
 .gradient p {
 	color: #ebeaed;
+}
+.title_area {
+	text-align: center;
+	margin-bottom: 45px;
+}
+.title_area .descr::after {
+	content: '';
+	display: block;
+	width: 50px;
+	height: 2px;
+	background: #ccc;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+.title_area h2 {
+	margin-bottom: 5px;
+}
+.title_area .descr {
+	font-family: 'Playfair Display';
+	color: #8e8d90;
 }
 
 /* Основное */
@@ -246,6 +266,44 @@ header #promoSlider.row.c2 .slick-dots li button::before {
 #video .watch:hover {
 	color: #00e0d0;
 }
+
+#expertise .wrap {
+	display: grid;
+	grid-template-columns: repeat(3, 3fr);
+}
+#expertise .item {
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-bottom: 20px;
+	text-align: center;
+	border-width: 0 1px 1px 0;
+	border-style: solid;
+	border-color: #ebebeb;
+}
+#expertise .item:nth-child(3n) {
+	border-right: none;
+}
+#expertise .item:nth-child(n+4) {
+	border-bottom: none;
+}
+#expertise .item::before {
+	content: '';
+	display: block;
+	background-image: url(images/sprite.png);
+	background-repeat: no-repeat;
+	width: 50px;
+	height: 50px;
+	margin: 30px auto;
+}
+#expertise .title {
+	color: #413d4b;
+	font-weight: bold;
+}
+#expertise .item.c2::before { background-position: -50px 0; }
+#expertise .item.c3::before { background-position: -100px 0; }
+#expertise .item.c4::before { background-position: 0px -50px; }
+#expertise .item.c5::before { background-position: -50px -50px; }
+#expertise .item.c6::before { background-position: -100px -50px; }
 
 #team {
 	background: url(images/back/3.jpg) no-repeat center top;
