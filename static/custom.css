@@ -409,6 +409,82 @@ header #promoSlider.row.c2 .slick-dots li button::before {
 	justify-content: center;
 }
 
+#peopleSlider {
+	padding-top: 70px;
+	position: relative;
+	color: #fff;
+	text-align: center;
+}
+#peopleSlider::before {
+	content: '';
+	display: block;
+	background: url(images/sprite.png) no-repeat -210px -100px;
+	width: 32px;
+	height: 26px;
+	position: absolute;
+	top: 10px;
+	left: calc(50% - 16px);
+}
+#people .gradient.block {
+	height: 500px;
+	box-sizing: border-box;
+}
+#peopleSlider .slide_area {
+	max-width: 780px;
+	margin: 0 auto 50px;
+}
+#peopleSlider .slide_area .slide .message {
+	font-family: 'Playfair Display';
+	line-height: 26px;
+	height: 105px;
+	overflow: hidden;
+}
+#peopleSlider .slide_area .slide .who_say {
+	margin-top: 45px;
+}
+#peopleSlider .slide_area .slide .who_say .name {
+	font-weight: bold;
+	margin-bottom: 5px;
+	font-size: 0.9em;
+}
+#peopleSlider .slide_area .slide .who_say .status {
+	font-size: 0.8em;
+}
+#peopleSlider .photo_wrap {
+	height: 70px;
+	box-sizing: border-box;
+	display: flex;
+	padding: 0 7px;
+}
+#peopleSlider .photo {
+	width: 45px;
+	border-radius: 50%;
+	transition: .3s;
+	margin: auto;
+}
+#peopleSlider .slick-current .photo {
+	/*width: 70px !important;*/
+}
+#peopleSlider .photo_wrap.slick-current  {
+	/*width: 84px !important;*/
+}
+#peopleSlider .people_area {
+	max-width: 320px;
+	margin: 0 auto;
+}
+
+#peopleSlider .slick-arrow::before {
+	content: '';
+	display: block;
+	width: 11px;
+	height: 21px;
+	background: url(images/sprite.png) no-repeat;
+	background-position: -250px -74px;
+}
+
+#peopleSlider .slick-next::before {
+	transform: rotate(180deg);
+}
 
 #people {
 	background: url(images/back/4.jpg) no-repeat center top;

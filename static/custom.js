@@ -10,6 +10,23 @@ $(document).ready(function() {
 		dots: true
 	});
 
+	// 
+	$("#peopleSlider .slide_area").slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		fade: true,
+		arrows: false,
+		asNavFor: "#peopleSlider  .people_area .inner"
+	});
+	$("#peopleSlider  .people_area .inner").slick({
+		slidesToShow: 5,
+		slidesToScroll: 1,
+		asNavFor: "#peopleSlider .slide_area",
+		arrows: true,
+		centerMode: true,
+		focusOnSelect: true
+	});
+
 	// Видео о компании
 	$("#video .watch").fancybox();
 
