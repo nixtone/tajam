@@ -33,5 +33,4 @@ PixelPerfect +
 Рамки (#7a7a7a, #ebebeb)
 
 ## TODO
-- Адаптивность  
 - Блок "people" доделать навигацию  

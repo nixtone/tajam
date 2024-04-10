@@ -222,6 +222,7 @@ header .container {
 	display: flex;
 	flex-direction: column;
 	height: inherit;
+	gap: 30px;
 }
 header .row.c1 {
 	display: flex;
@@ -583,11 +584,14 @@ footer .row.c1 {
 footer .row.c1 h4 {
 	margin: 20px 0 30px 0;
 }
+footer .reference {
+	display: flex;
+	gap: 30px;
+}
 footer .reference a {
 	color: #fff;
 	text-decoration: none;
 	font-size: 0.85em;
-	margin-right: 30px;
 	font-weight: bold;
 	transition: 0.3s;
 }
@@ -706,5 +710,51 @@ footer .row.c2 .author:hover {
 	.nom {
 		display: none;
 	}
+	header .row.c1 {
+		justify-content: center;
+	}
+	#expertise .item {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	#works .inner {
+		grid-template-columns: repeat(3, 1fr);
+	}
+	footer .row.c1 {
+		grid-template-columns: unset;
+	}
+	footer .subscribe .field {
+		max-width: unset;
+	}
 
+}
+@media all and (max-width: 601px) {
+	#about .container {
+		grid-template-columns: unset;
+		text-align: center;
+	}
+	#team .wrap {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	#expertise .wrap {
+		grid-template-columns: unset;
+	}
+	#expertise .item {
+		border-width: 1px 0 0 0;
+	}
+	#works .inner {
+		grid-template-columns: repeat(1, 1fr);
+		padding: 15px;
+		gap: 15px;
+	}
+	#contact .container {
+		grid-template-columns: unset;
+	}
+	footer .row.c2 {
+		flex-direction: column;
+		align-items: center;
+		gap: 15px;
+	}
 }
