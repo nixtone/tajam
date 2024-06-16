@@ -2,40 +2,31 @@
 
 @font-face {
     font-family: 'Roboto';
-    src: url('fonts/Roboto-Black.woff2') format('woff2'),
-        url('fonts/Roboto-Black.woff') format('woff');
+    src: url('fonts/Roboto-Black.woff2') format('woff2');
     font-weight: 900;
     font-style: normal;
 }
-
 @font-face {
     font-family: 'Roboto';
-    src: url('fonts/Roboto-Light.woff2') format('woff2'),
-        url('fonts/Roboto-Light.woff') format('woff');
+    src: url('fonts/Roboto-Light.woff2') format('woff2');
     font-weight: 300;
     font-style: normal;
 }
-
 @font-face {
     font-family: 'Playfair Display';
-    src: url('fonts/PlayfairDisplay-Black.woff2') format('woff2'),
-        url('fonts/PlayfairDisplay-Black.woff') format('woff');
+    src: url('fonts/PlayfairDisplay-Black.woff2') format('woff2');
     font-weight: 900;
     font-style: normal;
 }
-
 @font-face {
     font-family: 'Playfair Display';
-    src: url('fonts/PlayfairDisplay-Bold.woff2') format('woff2'),
-        url('fonts/PlayfairDisplay-Bold.woff') format('woff');
+    src: url('fonts/PlayfairDisplay-Bold.woff2') format('woff2');
     font-weight: bold;
     font-style: normal;
 }
-
 @font-face {
     font-family: 'Playfair Display';
-    src: url('fonts/PlayfairDisplay-Regular.woff2') format('woff2'),
-        url('fonts/PlayfairDisplay-Regular.woff') format('woff');
+    src: url('fonts/PlayfairDisplay-Regular.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
